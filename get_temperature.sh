@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# script print temperature of CPU, GPU etc
+
 temps=$(cat /sys/devices/virtual/thermal/thermal_zone[0-9]/temp)
 names=$(cat /sys/devices/virtual/thermal/thermal_zone[0-9]/type)
 
